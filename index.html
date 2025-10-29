@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuadTech Consulting</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+    body { scroll-behavior: smooth; }
+    
+    /* Header / Hero */
+    header {
+      background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.6);}
+    header p { font-size: 1.5rem; margin-bottom: 30px; text-shadow: 1px 1px 4px rgba(0,0,0,0.6);}
+    header a.button {
+      padding: 15px 35px;
+      background-color: #0d6efd;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    header a.button:hover { background-color: #0056b3; }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top:0; left:0; width:100%;
+      background: rgba(255,255,255,0.9);
+      display:flex;
+      justify-content:center;
+      padding:10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #0d6efd;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { color:#0056b3; }
+
+    /* Sections */
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    section h2 { font-size: 2.5rem; margin-bottom: 20px; color:#0d6efd;}
+    section p { font-size: 1.2rem; margin-bottom: 20px; }
+
+    /* Social / Footer */
+    .social a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #0d6efd;
+      transition: 0.3s;
+    }
+    .social a:hover { color: #0056b3; }
+    footer { text-align:center; padding: 20px; background: #f1f1f1; color:#555; }
+
+    @media (max-width:768px){
+      header h1 { font-size:2.2rem; }
+      header p { font-size:1.2rem; }
+    }
+  </style>
+  <!-- FontAwesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>QuadTech Consulting</h1>
+    <p>Innovative Solutions for Your Business</p>
+    <a href="#contact" class="button">Get in Touch</a>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>QuadTech Consulting specializes in IT consulting and digital transformation solutions designed to help your business grow efficiently and securely. We focus on innovation, performance, and security.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We provide tailored services including cloud solutions, IT strategy consulting, cybersecurity, and workflow optimization to empower your business for success.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:info@quadtechconsulting.com">info@quadtechconsulting.com</a> or reach us on social media.</p>
+    <div class="social">
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 QuadTech Consulting. All rights reserved.
+  </footer>
+
+</body>
+</html>
